@@ -22,3 +22,4 @@ function handleIncrementButtonClick() {
 function updateDisplay(value) {
     document.querySelector('#value').innerHTML = value;
 }
+
