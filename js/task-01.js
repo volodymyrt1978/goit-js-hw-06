@@ -13,10 +13,10 @@ const numberOfFirstBlock = firstBlock.lastElementChild.children.length;
 console.log("Category: ", titleOfFirstBlock);
 console.log("Elements: ", numberOfFirstBlock);
 
-const titleOfSeccondBlock = secondBlock.firstElementChild.textContent;
-const numberOfSeccondBlock = secondBlock.lastElementChild.children.length;
-console.log("Category: ", titleOfSeccondBlock);
-console.log("Elements: ", numberOfSeccondBlock);
+const titleOfSecondBlock = secondBlock.firstElementChild.textContent;
+const numberOfSecondBlock = secondBlock.lastElementChild.children.length;
+console.log("Category: ", titleOfSecondBlock);
+console.log("Elements: ", numberOfSecondBlock);
 
 const titleOfThirdBlock = thirdBlock.firstElementChild.textContent;
 const numberOfThirdBlock = thirdBlock.lastElementChild.children.length;
