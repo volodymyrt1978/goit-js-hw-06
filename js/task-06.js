@@ -1,13 +1,19 @@
 const textInput = document.querySelector('#validation-input');
 
-textInput.addEventListener("blur", onInputBlur);
+const validNumberOfSymbols = textInput.getAttribute('data-length');
 
-function onInputBlur() {
-    console.log("Инпут потерял фокус");
+textInput.addEventListener("blur", handleOnInputBlur);
+
+function handleOnInputBlur (event) {
+       
+    if (event.target.value.length === Number(validNumberOfSymbols)) {
+        textInput.classList.remove('invalid');
+        textInput.classList.add('valid');        
+    }
+
+    else {
+        textInput.classList.remove('valid');
+        textInput.classList.add('invalid');
+    }
 }
-
-textInput.addEventListener("change", onInputChange);
-
-function onInputChange(event) {
-console.log(event.currentTarget.value);
-}
+    
