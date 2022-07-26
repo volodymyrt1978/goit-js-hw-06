@@ -4,7 +4,7 @@ const validNumberOfSymbols = textInput.getAttribute('data-length');
 
 textInput.addEventListener("blur", handleOnInputBlur);
 
-function handleOnInputBlur (event) {
+function handleOnInputBlur(event) {
        
     if (event.target.value.length === Number(validNumberOfSymbols)) {
         textInput.classList.remove('invalid');
