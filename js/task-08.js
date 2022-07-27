@@ -15,8 +15,14 @@ function handleSubmit(event) {
         window.alert('ALL THE FIELDS SHOULD BE FILLED IN');
     } 
     else {
-        console.log(`Email: ${email.value}, Password: ${password.value}`)
+        const output = {
+            Email: `${email.value}`,
+            Password: `${password.value}`,
+        };
+        console.log(output);
     }
-
+    
     event.currentTarget.reset();
 }
+
+// console.log(`Email: ${email.value}, Password: ${password.value}`)
